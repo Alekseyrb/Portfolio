@@ -10,3 +10,9 @@ closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
+const counters = document.querySelectorAll('.skill__raiting-counter'),
+    lines = document.querySelectorAll('.skill__raiting-line span');
+
+counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
