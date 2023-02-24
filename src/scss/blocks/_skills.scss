@@ -3,6 +3,7 @@
     &__wrapper {
         padding: 60px 0 0 10px;
         display: grid;
+        justify-content: center;
         grid-template-columns: repeat(4, 270px);
         grid-template-rows: repeat(2, minmax(270px, auto));
         grid-auto-rows: minmax(270px, auto);
@@ -30,7 +31,9 @@
     &__raiting {
         padding-top: 120px;
         display: grid;
+        justify-content: center;
         grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 350px);
+        grid-auto-rows: minmax(70px, auto);
         column-gap: 45px;
         row-gap: 35px;
         &-item {

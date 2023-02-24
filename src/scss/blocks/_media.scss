@@ -1,0 +1,189 @@
+@media (max-width: 1439px) {
+    .sidepanel {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 400px 520px;
+            column-gap: 40px;
+        }
+        &__skills {
+            column-gap: 20px;
+            grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
+            &-item {
+                column-gap: 15px;
+                grid-template-columns: 40px 195px;
+            }
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__column {
+            margin-bottom: 20px;
+        }
+    }
+    .skill {
+        &__wrapper {
+            grid-template-columns: repeat(3, 270px);
+        }
+        &__raiting {
+            padding-top: 100px;
+            grid-template: repeat(3, minmax(70px, auto)) / repeat(2, 350px);
+
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .titile {
+        &_fz36 {
+            font-size: 30px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 300px 380px;
+        }
+        &__skills {
+            grid-template-columns: 380px;
+            grid-auto-rows: minmax(115px, auto);
+            &-item {
+                grid-template-columns: 40px 320px;
+                column-gap: 20px;
+                
+            }
+        }
+    }
+
+    .resume {
+        padding: 60px;
+        &__wrapper {
+            padding: 35px 20px 0 20px;
+        }
+    }
+    .skill {
+        padding-top: 60px;
+        &__wrapper {
+            grid-template-columns: repeat(2, 270px);
+        }
+        &__raiting {
+            padding-top: 100px;
+            grid-template: repeat(4, minmax(70px, auto)) /  repeat(2, 250px);
+            &-line {
+                width: 250px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .title_fz48 {
+        font-size: 19px;
+    }
+    .promo {
+        &__title {
+            line-height: 39px;
+            width: 300px;
+        }
+    }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template: 340px auto auto / 1fr;
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 260px);
+            &-item {
+                column-gap: 20px;
+                grid-template-columns: 40px 200px;
+            }
+        }
+        &__photo {
+            grid-row: unset;
+        }
+    }
+    .skill {
+        padding-top: 20px;
+        &__wrapper {
+            grid-template-columns:repeat(2, 220px);
+        }
+        &__raiting {
+            padding-top: 100px;
+            grid-template: repeat(4, minmax(70px, auto)) /  repeat(2, 250px);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .title_fz36 {
+        font-size: 24px;
+    }
+    .promo {
+        background: url("../img/main_bg.jpg") no-repeat 59% / cover;
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .about {
+        &__wrapper {
+            grid-template: 340px auto auto / 1fr;
+        }
+        &__skills {
+            grid-template-columns: 1fr;
+            &-item {
+                column-gap: 20px;
+                grid-template-columns: 40px 200px;
+            }
+        }
+        &__photo {
+            grid-row: unset;
+        }
+    }
+    .resume {
+        padding: 10px 5px 0 5px;
+        &__wrapper {
+            padding: 35px 20px 0 20px;
+        }
+    }
+    .divider {
+        margin-top: 10px;
+    }
+    .skill {
+        padding-top: 20px;
+        &__wrapper {
+            grid-template-columns: 270px;
+        }
+        &__raiting {
+            padding-top: 60px;
+            grid-template: repeat(4, minmax(70px, auto)) /  250px;
+            &-line {
+                width: 250px;
+            }
+        }
+        
+    }
+}
