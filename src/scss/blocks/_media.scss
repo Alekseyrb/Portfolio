@@ -37,7 +37,6 @@
         &__raiting {
             padding-top: 100px;
             grid-template: repeat(3, minmax(70px, auto)) / repeat(2, 350px);
-
         }
     }
     .works {
@@ -46,11 +45,21 @@
             grid-auto-rows: 280px;
             justify-content: space-around;
             row-gap: 30px;
-            .horizontal, .vertical {
+            .horizontal,
+            .vertical {
                 grid-row: unset;
                 grid-column: unset;
             }
-            
+        }
+    }
+
+    .contacts {
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 400px 520px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
         }
     }
 }
@@ -74,7 +83,6 @@
             &-item {
                 grid-template-columns: 40px 320px;
                 column-gap: 20px;
-                
             }
         }
     }
@@ -92,10 +100,22 @@
         }
         &__raiting {
             padding-top: 100px;
-            grid-template: repeat(4, minmax(70px, auto)) /  repeat(2, 250px);
+            grid-template: repeat(4, minmax(70px, auto)) / repeat(2, 250px);
             &-line {
                 width: 250px;
             }
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 300px 400px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 195px);
+        }
+        &__btn {
+            padding: 8px 25px;
+            line-height: 16px;
         }
     }
 }
@@ -132,15 +152,27 @@
     .skill {
         padding-top: 20px;
         &__wrapper {
-            grid-template-columns:repeat(2, 220px);
+            grid-template-columns: repeat(2, 220px);
         }
         &__raiting {
             padding-top: 100px;
-            grid-template: repeat(4, minmax(70px, auto)) /  repeat(2, 250px);
+            grid-template: repeat(4, minmax(70px, auto)) / repeat(2, 250px);
         }
     }
     .works {
         padding-top: 40px;
+    }
+    .contacts {
+        padding-top: 40px;
+        &__photo {
+            display: none;
+        }
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
+        }
     }
 }
 
@@ -195,11 +227,36 @@
         }
         &__raiting {
             padding-top: 60px;
-            grid-template: repeat(4, minmax(70px, auto)) /  250px;
+            grid-template: repeat(4, minmax(70px, auto)) / 250px;
             &-line {
                 width: 250px;
             }
         }
-        
+    }
+    .contacts {
+        padding-bottom: 50px;
+        &__form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+        &__textarea {
+            grid-column: unset;
+            width: 100%;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+        &__btn {
+            order: 2;
+            max-width: 220px;
+            margin: 0 auto;
+        }
+        &__policy {
+            width: 180px;
+            margin: 0 auto;
+            line-height: 18px;
+        }
     }
 }
